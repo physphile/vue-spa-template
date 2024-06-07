@@ -1,0 +1,44 @@
+{
+  "name": "vue-sfc-template",
+  "private": true,
+  "version": "1.0",
+  "type": "module",
+  "main": "src/index.ts",
+  "types": "src/index.d.ts",
+  "scripts": {
+    "dev": "bunx vite",
+    "build": "bunx vue-tsc && bunx vite build",
+    "preview": "bunx vite preview",
+    "prettier": "bunx prettier src/ --write",
+    "biome": "bunx @biomejs/biome check --apply src/",
+    "eslint": "ESLINT_USE_FLAT_CONFIG=false bunx eslint src/ --fix",
+    "stylelint": "bunx stylelint \"src/**/*.{vue,css}\" --fix",
+    "format": "bunx vue-tsc && bun run prettier && bun run biome && bun run eslint && bun run stylelint"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "1.7.3",
+    "@vitejs/plugin-vue": "^5.0.5",
+    "@vue/eslint-config-typescript": "^13.0.0",
+    "eslint": "^9.4.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-prettier": "^5.1.3",
+    "eslint-plugin-vue": "^9.26.0",
+    "eslint-plugin-vue-scoped-css": "^2.8.0",
+    "postcss-preset-env": "^9.5.14",
+    "stylelint": "^16.6.1",
+    "stylelint-config-recess-order": "^5.0.1",
+    "stylelint-config-recommended-vue": "^1.5.0",
+    "stylelint-config-standard": "^36.0.0",
+    "typescript": "^5.4.5",
+    "vite": "^5.2.12",
+    "vite-svg-loader": "^5.1.0",
+    "vue-tsc": "^2.0.19"
+  },
+  "dependencies": {
+    "@bpa-dev/uikit": "^0.0.68",
+    "axios": "^1.7.2",
+    "pinia": "^2.1.7",
+    "vue": "^3.4.27",
+    "vue-router": "^4.3.2"
+  }
+}

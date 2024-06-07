@@ -1,0 +1,6 @@
+node_modules
+dist
+.stylelintcache
+.vite
+.vscode
+.idea

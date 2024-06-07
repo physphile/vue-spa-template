@@ -1,0 +1,23 @@
+extends:
+    - eslint:recommended
+    - plugin:vue/vue3-recommended
+    - '@vue/typescript'
+    - plugin:prettier/recommended
+    - plugin:vue-scoped-css/vue3-recommended
+rules:
+    no-duplicate-imports: error
+    prettier/prettier: warn
+    vue/html-self-closing:
+        - warn
+        - html:
+              void: always
+              normal: always
+              component: always
+          svg: always
+          math: always
+    vue-scoped-css/enforce-style-type:
+        - error
+        - allows:
+              - module
+    vue/multi-word-component-names:
+        - off

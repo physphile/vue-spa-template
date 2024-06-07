@@ -1,0 +1,62 @@
+*,
+*::after,
+*::before {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+	scrollbar-color: #343a46 #252b36;
+
+	&::-webkit-scrollbar {
+		width: 8px;
+		height: 8px;
+		border-radius: 8px;
+	}
+
+	&::-webkit-scrollbar-track {
+		border-radius: 8px;
+		box-shadow: inset 8px 8px 0 0 #252b36;
+	}
+
+	&::-webkit-scrollbar-thumb {
+		border-radius: 8px;
+		box-shadow: inset 8px 8px 0 0 #343a46;
+	}
+}
+
+button {
+	display: inline-flex;
+	padding: 0;
+	background: none;
+	border: none;
+	outline: none;
+
+	&:not(:disabled) {
+		cursor: pointer;
+	}
+}
+
+input {
+	display: inline-flex;
+	min-width: 0;
+	padding: 0;
+	background: none;
+	border: none;
+	outline: none;
+}
+
+label {
+	display: block;
+}
+
+a {
+	color: inherit;
+}
+
+table {
+	border-spacing: 0;
+}
+
+dialog {
+	background: none;
+	border: none;
+}
